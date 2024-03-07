@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+$primary: #2776B2;
+$heading: #142633;
+$secondary: #506473;
+$primaryFont: Raleway, sans-serif;
+$secondaryFont: 'Varela Round', sans-serif;
+
+body {
+  font-family: $primaryFont;
+  font-size: 18px;
+  font-optical-sizing: auto;
+  color: $secondary;
+}
+
+.name {
+  font-family: $secondaryFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: -0.02em;
+  color: $primary;
+}
+
+.position {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  letter-spacing: -0.03em;
+  color: $secondary;
+  margin: 0;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  text-decoration-line: underline;
+
+  color: $heading;
+
+  a {
+    color: inherit;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .work-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+  }
+
+  .design-screen {
+    margin-top: 16px;
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 112px 16px;
+  }
+
+  .menu {
+    padding: 24px 16px;
+    position: fixed;
+    height: 64px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .icon-menu {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      background: url("assets/icons/menu.svg") no-repeat;
+      margin-left: auto;
+      cursor: pointer;
+    }
+  }
+}
