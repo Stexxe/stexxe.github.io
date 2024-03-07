@@ -40,7 +40,6 @@ h2 {
   font-size: 23px;
   line-height: 22px;
   letter-spacing: -0.02em;
-  text-decoration-line: underline;
   color: #142633;
 }
 h2 a {
@@ -53,28 +52,60 @@ h2 a {
     flex-direction: column;
     margin-top: 48px;
   }
-  .design-screen {
+  .work-list li {
+    margin-bottom: 48px;
+  }
+  .design-preview {
     margin-top: 16px;
     max-width: 100%;
+    border-radius: 16px;
+    border: 1px solid #DAE8F2;
   }
   .container {
     padding: 112px 16px;
   }
   .menu {
+    background: rgba(245, 248, 250, 0.9);
     padding: 24px 16px;
     position: fixed;
-    height: 64px;
+    height: 96px;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
-  .menu .icon-menu {
+  .menu .menu-list {
+    display: none;
+  }
+  .menu .menu-item a {
+    text-decoration: none;
+  }
+  .menu .icon {
     display: inline-block;
     width: 48px;
     height: 48px;
-    background: url("assets/icons/menu.svg") no-repeat;
     margin-left: auto;
     cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  .menu .icon-menu {
+    background: url("assets/icons/menu.svg") no-repeat;
+  }
+  .menu-expanded {
+    width: calc(100% - 16px);
+    box-shadow: 0 3px 4px 2px rgba(20, 38, 51, 0.25);
+    min-height: 256px;
+  }
+  .menu-expanded .menu-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+  }
+  .menu-expanded .menu-list li {
+    margin-bottom: 32px;
+  }
+  .menu-expanded .icon-menu {
+    background: url("assets/icons/close.svg") no-repeat;
   }
 }
 

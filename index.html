@@ -10,8 +10,16 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="menu">
-        <i class="icon-menu"></i>
+    <div class="menu" id="menu">
+        <button id="menu-button" class="icon icon-menu"></button>
+        <ul class="menu-list">
+            <li>
+                <h2 class="menu-item"><a href="">Home</a></h2>
+            </li>
+            <li>
+                <h2 class="menu-item"><a href="#">About me</a></h2>
+            </li>
+        </ul>
     </div>
     <div class="container">
         <h1 class="name">Aleksei Tirman</h1>
@@ -22,10 +30,16 @@
                 <h2 class="work-heading">
                     <a href="#">Mobile design for currency exchange application</a>
                 </h2>
-                <img class="design-screen" src="assets/mobile_design.png" alt="Mobile design">
+                <img class="design-preview" src="assets/mobile_design.png" alt="Mobile design preview">
+            </li>
+            <li>
+                <h2 class="work-heading">
+                    <a href="#">Web design for currency exchange application</a>
+                </h2>
+                <img class="design-preview" src="assets/web_design.png" alt="Web design preview">
             </li>
         </ul>
-
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
