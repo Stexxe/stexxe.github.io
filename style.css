@@ -72,11 +72,22 @@ h2 a {
     width: 100%;
     display: flex;
     flex-direction: column;
+    transition: 0.5s height cubic-bezier(0.73, 0.32, 0.34, 1.5);
+    overflow: hidden;
   }
   .menu .menu-list {
-    display: none;
+    flex-direction: column;
+    margin-top: 48px;
+    transition: 1s opacity cubic-bezier(0.73, 0.32, 0.34, 1.5);
+    opacity: 0;
+  }
+  .menu .menu-list li {
+    margin-bottom: 8px;
   }
   .menu .menu-item a {
+    padding: 13px 0;
+    display: inline-block;
+    width: 100%;
     text-decoration: none;
   }
   .menu .icon {
@@ -89,20 +100,16 @@ h2 a {
     outline: none;
   }
   .menu .icon-menu {
+    flex-shrink: 0;
     background: url("assets/icons/menu.svg") no-repeat;
   }
   .menu-expanded {
     width: calc(100% - 16px);
     box-shadow: 0 3px 4px 2px rgba(20, 38, 51, 0.25);
-    min-height: 256px;
+    height: 256px;
   }
   .menu-expanded .menu-list {
-    display: flex;
-    flex-direction: column;
-    margin-top: 48px;
-  }
-  .menu-expanded .menu-list li {
-    margin-bottom: 32px;
+    opacity: 1;
   }
   .menu-expanded .icon-menu {
     background: url("assets/icons/close.svg") no-repeat;

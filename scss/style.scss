@@ -85,12 +85,24 @@ h2 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    transition: 0.5s height cubic-bezier(.73, .32, .34, 1.5);
+    overflow: hidden;
+
     .menu-list {
-      display: none;
+      flex-direction: column;
+      margin-top: 48px;
+      transition: 1s opacity cubic-bezier(.73, .32, .34, 1.5);
+      opacity: 0;
+      li {
+        margin-bottom: 8px;
+      }
     }
 
     .menu-item {
       a {
+        padding: 13px 0;
+        display: inline-block;
+        width: 100%;
         text-decoration: none;
       }
     }
@@ -106,6 +118,7 @@ h2 {
     }
 
     .icon-menu {
+      flex-shrink: 0;
       background: url("assets/icons/menu.svg") no-repeat;
     }
   }
@@ -113,15 +126,10 @@ h2 {
   .menu-expanded {
     width: calc(100% - 16px);
     box-shadow: 0 3px 4px 2px rgba(20, 38, 51, 0.25);
-    min-height: 256px;
+    height: 256px;
 
     .menu-list {
-      display: flex;
-      flex-direction: column;
-      margin-top: 48px;
-      li {
-        margin-bottom: 32px;
-      }
+      opacity: 1;
     }
 
     .icon-menu {
