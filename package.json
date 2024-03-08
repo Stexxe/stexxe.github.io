@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "express": "^4.18.3",
     "sass": "^1.71.1"
   },
   "scripts": {

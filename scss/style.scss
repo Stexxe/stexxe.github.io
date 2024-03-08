@@ -23,12 +23,35 @@ body {
   color: $secondary;
 }
 
+p {
+  margin-top: 16px;
+  line-height: 27px;
+}
+
+a {
+  color: $primary;
+}
+
+h1 {
+  color: $heading;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 25px;
+}
+
+.greeting {
+  margin-top: 32px;
+  color: $secondary;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: normal;
+}
+
 .name {
   font-family: $secondaryFont;
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
-  letter-spacing: -0.02em;
   color: $primary;
 }
 
@@ -53,6 +76,11 @@ h2 {
   a {
     color: inherit;
   }
+}
+
+.email {
+  display: inline-block;
+  margin-top: 32px;
 }
 
 @media screen and (max-width: 430px) {

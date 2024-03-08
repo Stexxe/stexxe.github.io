@@ -15,12 +15,35 @@ body {
   color: #506473;
 }
 
+p {
+  margin-top: 16px;
+  line-height: 27px;
+}
+
+a {
+  color: #2776B2;
+}
+
+h1 {
+  color: #142633;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 25px;
+}
+
+.greeting {
+  margin-top: 32px;
+  color: #506473;
+  font-family: "Varela Round", sans-serif;
+  font-weight: normal;
+}
+
 .name {
   font-family: "Varela Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
-  letter-spacing: -0.02em;
   color: #2776B2;
 }
 
@@ -44,6 +67,11 @@ h2 {
 }
 h2 a {
   color: inherit;
+}
+
+.email {
+  display: inline-block;
+  margin-top: 32px;
 }
 
 @media screen and (max-width: 430px) {
