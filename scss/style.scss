@@ -12,7 +12,7 @@ $primary: #2776B2;
 $heading: #142633;
 $secondary: #506473;
 $altBackground: #F5F8FA;
-$altBackgroundTransparent: rgba(245, 248, 250, 0.9);
+$altBackgroundTransparent: rgba(245, 248, 250, 0.8);
 $primaryFont: Raleway, sans-serif;
 $secondaryFont: 'Varela Round', sans-serif;
 
@@ -78,6 +78,10 @@ h2 {
   }
 }
 
+.sub-header {
+  margin-top: 32px;
+}
+
 .email {
   display: inline-block;
   margin-top: 32px;
@@ -94,10 +98,13 @@ h2 {
     }
   }
 
-  .design-preview {
+  img {
     margin-top: 16px;
     max-width: 100%;
     border-radius: 16px;
+  }
+
+  .design-preview {
     border: 1px solid #DAE8F2;
   }
 

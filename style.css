@@ -69,6 +69,10 @@ h2 a {
   color: inherit;
 }
 
+.sub-header {
+  margin-top: 32px;
+}
+
 .email {
   display: inline-block;
   margin-top: 32px;
@@ -83,17 +87,19 @@ h2 a {
   .work-list li {
     margin-bottom: 48px;
   }
-  .design-preview {
+  img {
     margin-top: 16px;
     max-width: 100%;
     border-radius: 16px;
+  }
+  .design-preview {
     border: 1px solid #DAE8F2;
   }
   .container {
     padding: 112px 16px;
   }
   .menu {
-    background: rgba(245, 248, 250, 0.9);
+    background: rgba(245, 248, 250, 0.8);
     padding: 24px 16px;
     position: fixed;
     height: 96px;
