@@ -1,10 +1,8 @@
-document.getElementById('test').textContent = document.body.clientWidth.toString();
-
 const img = new Image();
 img.src = 'us.png';
 img.onload = () => {
   const puzzle = new headbreaker.Canvas('puzzle', {
-    width: 430,
+    width: 345,
     height: 650,
     image: img,
     pieceSize: 100,
@@ -17,7 +15,7 @@ img.onload = () => {
 
   puzzle.adjustImagesToPuzzleHeight()
   puzzle.autogenerate({
-    horizontalPiecesCount: 4, // TODO: tweak values
+    horizontalPiecesCount: 4,
     verticalPiecesCount: 4
   });
   // puzzle.shuffle(0.7);
