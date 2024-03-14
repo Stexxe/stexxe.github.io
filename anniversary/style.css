@@ -16,6 +16,8 @@
 
 body {
   background: #A0A1B4;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 #puzzle {
@@ -39,7 +41,7 @@ body {
 }
 
 main {
-  margin-top: 48px;
+  margin-top: 24px;
   padding: 16px;
 }
 
@@ -49,7 +51,7 @@ h1 {
   font-size: 60px;
   line-height: 60px;
   color: #4976E5;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 p {
@@ -79,5 +81,5 @@ footer {
   font-weight: 700;
   font-size: 18px;
   color: #223566;
-  margin-bottom: 22px;
+  margin-bottom: 8px;
 }
