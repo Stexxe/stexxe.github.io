@@ -34,7 +34,7 @@ function initPuzzle() {
   img.onload = () => {
     const puzzle = new headbreaker.Canvas('puzzle', {
       width: 345,
-      height: 650,
+      height: 600,
       image: img,
       pieceSize: 100,
       proximity: 20,
