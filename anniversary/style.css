@@ -7,8 +7,7 @@
 
 .wrap {
   width: 100vw;
-  height: 823px;
-  background: url("assets/bg.svg") no-repeat top 40% right;
+  background: url("assets/bg.svg") no-repeat top 60% right;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -19,13 +18,14 @@ body {
 }
 
 #puzzle {
-  border: 1px solid gray;
+  border: 1px solid #CED1D9;
 }
 
 .balloons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 24px;
 }
 
 .balloon-big {
@@ -39,8 +39,6 @@ body {
 }
 
 main {
-  margin-top: 24px;
-  margin-bottom: 64px;
   padding: 16px;
 }
 
@@ -62,6 +60,7 @@ p {
 
 footer {
   padding: 16px 16px 0 16px;
+  margin-top: 64px;
 }
 
 .heart-button-play {
@@ -80,5 +79,14 @@ footer {
   font-weight: 700;
   font-size: 18px;
   color: #223566;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #4976E5;
   margin-bottom: 8px;
 }

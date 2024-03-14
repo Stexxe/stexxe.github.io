@@ -11,11 +11,7 @@
 </head>
 <body>
 
-<template id="start">
-
-</template>
-
-<div class="wrap">
+<template id="start-page">
     <header>
         <div class="balloons">
             <img class="balloon-big" src="assets/balloon_big.svg" alt="balloon">
@@ -29,9 +25,21 @@
     </header>
 
     <footer>
-        <div class="instruction">Сыграй в небольшую игру :)</div>
-        <button class="heart-button-play"></button>
+        <div class="instruction">Сыграй в небольшую игру :-)</div>
+        <button id="play" class="heart-button-play"></button>
     </footer>
+</template>
+
+<template id="puzzle-page">
+    <main>
+        <h2>Собери паззлик с Лешкой и Валькой :-)</h2>
+        <div id="puzzle"></div>
+    </main>
+
+</template>
+
+<div class="wrap" id="app">
+
 
 
 
