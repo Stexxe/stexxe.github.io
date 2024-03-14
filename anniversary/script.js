@@ -1,5 +1,3 @@
-document.querySelector('button').textContent = document.body.clientHeight.toString()
-
 // const img = new Image();
 // img.src = 'us.png';
 // img.onload = () => {
