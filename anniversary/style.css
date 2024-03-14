@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  background: url("assets/bg.svg") no-repeat top 40% right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body {
+  background: #A0A1B4;
+}
+
+#puzzle {
+  border: 1px solid gray;
+}
+
+.balloons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.balloon-big {
+  width: 137px;
+  height: 185px;
+}
+
+.balloon-small {
+  width: 84px;
+  height: 103px;
+}
+
+main {
+  margin-top: 48px;
+  padding: 16px;
+}
+
+h1 {
+  font-weight: 400;
+  font-family: Pacifico, cursive;
+  font-size: 60px;
+  line-height: 60px;
+  color: #4976E5;
+  margin-bottom: 48px;
+}
+
+p {
+  font-family: Pacifico, cursive;
+  font-size: 40px;
+  line-height: 60px;
+  color: #4976E5;
+}
+
+footer {
+  padding: 16px 16px 0 16px;
+}
+
+.heart-button-play {
+  display: flex;
+  width: 107px;
+  height: 77px;
+  outline: none;
+  background: url("assets/play_button.svg");
+  border: none;
+  margin: 0 auto;
+}
+
+.instruction {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #223566;
+  margin-bottom: 22px;
+}
