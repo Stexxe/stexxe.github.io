@@ -20,14 +20,13 @@ function renderPuzzle() {
   const clone = template.content.cloneNode(true);
   app.appendChild(clone)
 
+  document.getElementById('get-gift').addEventListener('click', () => {
+    clearPage();
+    renderFinal();
+  });
+
   initPuzzle();
 }
-
-renderStart();
-
-
-
-
 
 function initPuzzle() {
   const img = new Image();
@@ -61,3 +60,10 @@ function initPuzzle() {
   }
 }
 
+function renderFinal() {
+  const template = document.getElementById('final-page');
+  const clone = template.content.cloneNode(true);
+  app.appendChild(clone)
+}
+
+renderStart();

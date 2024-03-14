@@ -19,7 +19,7 @@
         </div>
 
         <main>
-            <h1>Валька! <img src="assets/heart.svg" alt="Heart"></h1>
+            <h1 class="start-header">Валька! <img src="assets/heart.svg" alt="Heart"></h1>
             <p>Поздравляю тебя с годовщиной нашей свадьбы !</p>
         </main>
     </header>
@@ -34,17 +34,18 @@
     <main>
         <h2>Собери паззлик с Лешкой и Валькой :-)</h2>
         <div id="puzzle"></div>
+        <button id="get-gift" class="gift-button"></button>
     </main>
-
 </template>
 
-<div class="wrap" id="app">
+<template id="final-page">
+    <main>
+        <h1 class="final-header">Это тебе!</h1>
+        <img class="gift" src="assets/flowers.svg" alt="Flowers">
+    </main>
+</template>
 
-
-
-
-<!--    <div id="puzzle"></div>-->
-</div>
+<div class="wrap" id="app"></div>
 <script src="https://flbulgarelli.github.io/headbreaker/js/headbreaker.js"></script>
 <script src="script.js"></script>
 </body>

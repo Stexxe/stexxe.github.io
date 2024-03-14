@@ -6,7 +6,7 @@
 }
 
 .wrap {
-  width: 100vw;
+  width: 100%;
   background: url("assets/bg.svg") no-repeat top 60% right;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,19 @@ h1 {
   font-size: 60px;
   line-height: 60px;
   color: #4976E5;
+}
+
+.gift {
+  margin-top: 64px;
+}
+
+.start-header {
   margin-bottom: 48px;
+}
+
+.final-header {
+  margin-top: 128px;
+  text-align: center;
 }
 
 p {
@@ -71,6 +83,16 @@ footer {
   background: url("assets/play_button.svg");
   border: none;
   margin: 0 auto;
+}
+
+.gift-button {
+  display: flex;
+  width: 152px;
+  outline: none;
+  border: none;
+  height: 77px;
+  background: url("assets/gift-button.svg");
+  margin: 24px auto;
 }
 
 .instruction {
