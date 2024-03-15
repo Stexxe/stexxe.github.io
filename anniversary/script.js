@@ -29,6 +29,26 @@ function renderPuzzle() {
 }
 
 function initPuzzle() {
+  const audioFiles = [
+      'assets/sounds/bravo.ogg',
+      'assets/sounds/goodjob.ogg',
+      'assets/sounds/slower.ogg',
+      'assets/sounds/tak.ogg',
+      'assets/sounds/bravo.ogg',
+      'assets/sounds/tutelka.ogg',
+      'assets/sounds/uh.ogg',
+  ]
+
+  const audios  = audioFiles.map((f) => new Audio(f));
+  audios.forEach((a) => {
+    a.addEventListener('ended', () => {
+      playing = false
+    })
+  })
+
+  const solvedAudio = new Audio('assets/sounds/tada.mp3')
+  let playing = false;
+
   const img = new Image();
   img.src = 'assets/us.png';
   img.onload = () => {
@@ -55,9 +75,20 @@ function initPuzzle() {
     puzzle.draw();
 
     puzzle.onConnect((_piece, figure, _target) => {
-      if (_target.puzzle.isValid()) {
+      const solved = _target.puzzle.isValid()
+
+      if (solved) {
+        solvedAudio.play().then()
         document.getElementById('get-gift').classList.add('gift-button-show')
+        return
       }
+
+      if (!playing) {
+        playing = true
+        audios[Math.floor(Math.random() * audios.length)].play().then()
+      }
+
+
     })
   }
 }
