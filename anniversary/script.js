@@ -15,6 +15,10 @@ function renderStart() {
       el.classList.add('instruction-full')
     })
   }, 500)
+  setTimeout(() => {
+    playButton.classList.add('vibrate')
+  }, 2000)
+
   playButton.addEventListener('click', () => {
     clearPage();
     renderPuzzle();
