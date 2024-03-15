@@ -46,8 +46,8 @@ function initPuzzle() {
 
     puzzle.adjustImagesToPuzzleHeight()
     puzzle.autogenerate({
-      horizontalPiecesCount: 4,
-      verticalPiecesCount: 4
+      horizontalPiecesCount: 2,
+      verticalPiecesCount: 2
     });
     puzzle.shuffle(0.7);
     puzzle.attachSolvedValidator()
@@ -55,7 +55,9 @@ function initPuzzle() {
     puzzle.draw();
 
     puzzle.onConnect((_piece, figure, _target) => {
-      console.log(_target.puzzle.isValid())
+      if (_target.puzzle.isValid()) {
+        document.getElementById('get-gift').classList.add('gift-button-show')
+      }
     })
   }
 }

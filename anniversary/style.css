@@ -83,6 +83,7 @@ footer {
   background: url("assets/play_button.svg");
   border: none;
   margin: 0 auto;
+
 }
 
 .gift-button {
@@ -93,6 +94,11 @@ footer {
   height: 77px;
   background: url("assets/gift-button.svg");
   margin: 24px auto;
+  opacity: 0;
+}
+
+.gift-button-show {
+  opacity: 1;
 }
 
 .instruction {
