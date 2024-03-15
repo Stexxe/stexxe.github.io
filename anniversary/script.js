@@ -89,7 +89,17 @@ function initPuzzle() {
 
       if (solved) {
         solvedAudio.play().then()
-        document.getElementById('get-gift').classList.add('gift-button-show')
+        const giftButton = document.getElementById('get-gift')
+        setTimeout(() => {
+          img.classList.add('us-solved', 'scale-in')
+          document.querySelector('#app main').prepend(img)
+          document.getElementById('puzzle').remove()
+          document.querySelectorAll('h2').forEach((el) => el.remove())
+          giftButton.classList.add('scale-in', 'visible')
+          setTimeout(() => giftButton.classList.add('vibrate'), 2000)
+        }, 1000)
+
+
         return
       }
 
@@ -97,8 +107,6 @@ function initPuzzle() {
         playing = true
         audios[Math.floor(Math.random() * audios.length)].play().then()
       }
-
-
     })
   }
 }
