@@ -76,14 +76,22 @@ footer {
 }
 
 .heart-button-play {
+  transform-origin: center;
   display: flex;
-  width: 107px;
-  height: 77px;
+  width: 0;
+  height: 0;
+  opacity: 0;
   outline: none;
   background: url("assets/play_button.svg");
   border: none;
   margin: 0 auto;
+  transition: width 0.5s ease 1s, opacity 0.5s ease-in-out 1s;
+}
 
+.heart-button-play-full {
+  width: 107px;
+  height: 77px;
+  opacity: 1;
 }
 
 .gift-button {
@@ -105,9 +113,15 @@ footer {
   font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: 700;
+  opacity: 0;
   font-size: 18px;
   color: #223566;
+  transition: opacity 1s ease-in-out;
   margin-bottom: 8px;
+}
+
+.instruction-full {
+  opacity: 1;
 }
 
 h2 {

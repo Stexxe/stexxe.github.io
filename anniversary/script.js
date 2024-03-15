@@ -9,7 +9,14 @@ function renderStart() {
   const clone = template.content.cloneNode(true);
   app.appendChild(clone)
 
-  document.getElementById('play').addEventListener('click', () => {
+  const playButton = document.getElementById('play')
+  setTimeout(() => {
+    document.querySelectorAll('.instruction').forEach((el) => {
+      el.classList.add('instruction-full')
+    })
+    playButton.classList.add('heart-button-play-full')
+  }, 500)
+  playButton.addEventListener('click', () => {
     clearPage();
     renderPuzzle();
   });
