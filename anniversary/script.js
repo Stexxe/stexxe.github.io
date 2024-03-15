@@ -14,7 +14,6 @@ function renderStart() {
     document.querySelectorAll('.instruction').forEach((el) => {
       el.classList.add('instruction-full')
     })
-    playButton.classList.add('heart-button-play-full')
   }, 500)
   playButton.addEventListener('click', () => {
     clearPage();

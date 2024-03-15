@@ -31,6 +31,16 @@ body {
 .balloon-big {
   width: 137px;
   height: 185px;
+  animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
 }
 
 .balloon-small {
@@ -78,20 +88,45 @@ footer {
 .heart-button-play {
   transform-origin: center;
   display: flex;
-  width: 0;
-  height: 0;
-  opacity: 0;
+  width: 107px;
+  height: 77px;
   outline: none;
   background: url("assets/play_button.svg");
   border: none;
   margin: 0 auto;
-  transition: width 0.5s ease 1s, opacity 0.5s ease-in-out 1s;
+  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both, vibrate-1 0.5s linear infinite both;
 }
 
-.heart-button-play-full {
-  width: 107px;
-  height: 77px;
-  opacity: 1;
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .gift-button {
@@ -131,4 +166,32 @@ h2 {
   line-height: 20px;
   color: #4976E5;
   margin-bottom: 8px;
+}
+
+.heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
 }
