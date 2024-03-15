@@ -76,8 +76,8 @@ function initPuzzle() {
 
     puzzle.adjustImagesToPuzzleHeight()
     puzzle.autogenerate({
-      horizontalPiecesCount: 2,
-      verticalPiecesCount: 2
+      horizontalPiecesCount: 4,
+      verticalPiecesCount: 4
     });
     puzzle.shuffle(0.7);
     puzzle.attachSolvedValidator()
